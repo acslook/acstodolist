@@ -25,12 +25,6 @@ namespace Acs.TodoList.Infra.Repositories
             await connection.ExecuteAsync(ItemSqlStatements.InsertItem, item);        
         }
 
-        public async Task<List<Item>> GetWithPagination()
-        {
-            using var connection = new NpgsqlConnection(_connectionString);
-            return (await connection.QueryAsync<Item>(@"select * from ""Item""")).ToList();
-        }
-
         public async Task<ResponseDto> GetAllWithPagination(int limit, int offset)
         {
             using (var connection = new NpgsqlConnection(_connectionString))
