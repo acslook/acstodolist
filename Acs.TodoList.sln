@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acs.TodoList.Infra", "Acs.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acs.TodoList.Services", "Acs.TodoList.Services\Acs.TodoList.Services.csproj", "{8A7ED5D8-27A5-4635-97D3-40136C56E7CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acs.TodoList.Tests", "Acs.TodoList.Tests\Acs.TodoList.Tests.csproj", "{922C0AC9-3D69-4C29-AADA-2994BA78CEA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acs.TodoList.Tests", "Acs.TodoList.Tests\Acs.TodoList.Tests.csproj", "{922C0AC9-3D69-4C29-AADA-2994BA78CEA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acs.TodoList.Lambda", "Acs.TodoList.Lambda\Acs.TodoList.Lambda.csproj", "{B8A03CB6-42F7-4431-B909-BB93A1E528F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{922C0AC9-3D69-4C29-AADA-2994BA78CEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922C0AC9-3D69-4C29-AADA-2994BA78CEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922C0AC9-3D69-4C29-AADA-2994BA78CEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A03CB6-42F7-4431-B909-BB93A1E528F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A03CB6-42F7-4431-B909-BB93A1E528F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A03CB6-42F7-4431-B909-BB93A1E528F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A03CB6-42F7-4431-B909-BB93A1E528F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
