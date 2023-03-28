@@ -1,7 +1,7 @@
 ﻿using Acs.TodoList.Domain.Entities;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Acs.TodoList.Domain.Dtos
+namespace Acs.TodoList.Domain.Dtos.ItemEntity.Response
 {
     [ExcludeFromCodeCoverage]
     public class ResponseDto

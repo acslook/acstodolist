@@ -1,3 +1,4 @@
+using Acs.TodoList.Domain.Notifications;
 using Acs.TodoList.Infra.Configurations;
 
 namespace Acs.TodoList.Lambda;
@@ -16,7 +17,7 @@ public class Startup
     {
         services.AddControllers();
         services.AddSwaggerGen();
-        services.ConfigureDependencyInjection();
+        services.ConfigureDependencyInjection();        
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -25,10 +26,9 @@ public class Startup
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
-        }
-
-        app.UseSwagger();
-        app.UseSwaggerUI();
+            app.UseSwagger();
+            app.UseSwaggerUI();
+        }       
 
         app.UseHttpsRedirection();
 

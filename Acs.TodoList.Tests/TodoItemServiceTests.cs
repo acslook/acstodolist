@@ -1,5 +1,7 @@
 
 
+using Acs.TodoList.Domain.Dtos.ItemEntity.common;
+using Acs.TodoList.Domain.Dtos.ItemEntity.Response;
 using Acs.TodoList.Domain.Entities;
 using Acs.TodoList.Domain.Interfaces.Repositories;
 using Acs.TodoList.Services;
@@ -66,7 +68,7 @@ namespace Acs.TodoList.Tests
             var listItems = _fixture.CreateMany<Item>(100).ToList();
 
             _repositoryItem.Setup(r => r.GetAllWithPagination(It.IsAny<int>(), It.IsAny<int>()))
-                .ReturnsAsync(new Domain.Dtos.ResponseDto
+                .ReturnsAsync(new ResponseDto
                 {
                     Content = listItems
                 });
@@ -74,7 +76,7 @@ namespace Acs.TodoList.Tests
             var service = new TodoItemService(_repositoryItem.Object);
 
             // Action
-            var result = await service.GetAllWithPagination(10, 10);
+            var result = await service.GetAllWithPagination(new PaginationRequestModel(10, 10));
 
             // Assert
             _repositoryItem.Verify(d => d.GetAllWithPagination(It.IsAny<int>(), It.IsAny<int>()), Times.Once);

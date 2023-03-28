@@ -1,4 +1,4 @@
-﻿using Acs.TodoList.Domain.Dtos;
+﻿using Acs.TodoList.Domain.Dtos.ItemEntity.Response;
 using Acs.TodoList.Domain.Entities;
 
 namespace Acs.TodoList.Domain.Interfaces.Repositories
